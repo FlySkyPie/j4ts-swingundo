@@ -1,0 +1,14 @@
+{
+	"@Replace('return 'Undo '+this.getPresentationName();')": {
+		"include": [ "javax.swing.undo.AbstractUndoableEdit.getUndoPresentationName()" ]
+	},
+	"@Replace('return 'Redo '+this.getPresentationName();')": {
+		"include": [ "javax.swing.undo.AbstractUndoableEdit.getRedoPresentationName()" ]
+	},
+	"@Replace('if(this.inProgress) { if(this.canUndo()) { return this.editToBeUndone().getUndoPresentationName(); } else { return 'Undo'; } } else { return super.getUndoPresentationName(); }')": {
+		"include": [ "javax.swing.undo.UndoManager.getUndoPresentationName()" ]
+	},
+	"@Replace('if(this.inProgress) { if(this.canRedo()) { return this.editToBeRedone().getRedoPresentationName(); } else { return 'Redo'; } } else { return super.getRedoPresentationName(); }')": {
+		"include": [ "javax.swing.undo.UndoManager.getRedoPresentationName()" ]
+	}
+}
