@@ -5,3 +5,5 @@
 /target/
 /.svn/
 /src/main/resources/META-INF/resources/
+
+dist
