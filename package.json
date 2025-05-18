@@ -1,0 +1,23 @@
+{
+  "name": "@flyskypie/j4ts-swingundo",
+  "version": "1.0.1",
+  "main": "./dist/j4ts-swingundo.js",
+  "module": "./dist/j4ts-swingundo.js",
+  "types": "./dist/j4ts-swingundo.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "./mvnw install && gulp inject-global"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1"
+  },
+  "license": "Apache-2.0",
+  "files": [
+    "./dist/j4ts-swingundo.js",
+    "./dist/j4ts-swingundo.d.ts",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ]
+}

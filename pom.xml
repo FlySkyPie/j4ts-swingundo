@@ -75,7 +75,7 @@
 								<echo message="copying generated bundles to dist..." />
 								<copy
 									file="src/main/resources/META-INF/resources/webjars/${project.artifactId}/${project.version}/bundle.js"
-									tofile="dist/${project.artifactId}.js" verbose="true" />
+									tofile="dist/bundle.js" verbose="true" />
 								<copy
 									file="src/main/resources/META-INF/resources/typings/${project.artifactId}/${project.version}/bundle.d.ts"
 									tofile="dist/${project.artifactId}.d.ts" verbose="true" />
