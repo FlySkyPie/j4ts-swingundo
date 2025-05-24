@@ -37,6 +37,25 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<groupId>com.github.eirslett</groupId>
+				<artifactId>frontend-maven-plugin</artifactId>
+				<!-- Use the latest released version:
+				https://repo1.maven.org/maven2/com/github/eirslett/frontend-maven-plugin/ -->
+				<version>1.15.1</version>
+				<executions>
+					<execution>
+						<id>install-node-and-corepack</id>
+						<goals>
+							<goal>install-node-and-corepack</goal>
+						</goals>
+						<phase>initialize</phase>
+					</execution>
+				</executions>
+				<configuration>
+					<nodeVersion>v16.20.2</nodeVersion>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.jsweet</groupId>
 				<artifactId>jsweet-maven-plugin</artifactId>
 				<version>2.2.0-SNAPSHOT</version>

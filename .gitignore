@@ -32,3 +32,4 @@ dist-ssr
 /src/main/resources/META-INF/resources/
 
 dist
+node
